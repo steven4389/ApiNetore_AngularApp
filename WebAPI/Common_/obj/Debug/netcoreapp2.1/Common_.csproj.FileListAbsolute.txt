@@ -1,0 +1,9 @@
+D:\pruebaEmergia\WebAPI\Common_\bin\Debug\netcoreapp2.1\Common_.deps.json
+D:\pruebaEmergia\WebAPI\Common_\bin\Debug\netcoreapp2.1\Common_.dll
+D:\pruebaEmergia\WebAPI\Common_\bin\Debug\netcoreapp2.1\Common_.pdb
+D:\pruebaEmergia\WebAPI\Common_\obj\Debug\netcoreapp2.1\Common_.csprojAssemblyReference.cache
+D:\pruebaEmergia\WebAPI\Common_\obj\Debug\netcoreapp2.1\Common_.csproj.CoreCompileInputs.cache
+D:\pruebaEmergia\WebAPI\Common_\obj\Debug\netcoreapp2.1\Common_.AssemblyInfoInputs.cache
+D:\pruebaEmergia\WebAPI\Common_\obj\Debug\netcoreapp2.1\Common_.AssemblyInfo.cs
+D:\pruebaEmergia\WebAPI\Common_\obj\Debug\netcoreapp2.1\Common_.dll
+D:\pruebaEmergia\WebAPI\Common_\obj\Debug\netcoreapp2.1\Common_.pdb

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand text-white">JWT Auth System</a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/adminpanel">Admin Panel</a>
+    </li>
+  </ul>
+  <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</nav>
+<div class="row">
+  <div class="col-md-2" style="margin-right:50px; width: 100%">
+    <div class="card m-5" style="width:100%" *ngIf="userDetails">
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Username : </strong>{{userDetails.userName}}</li>
+        <li class="list-group-item"><strong>FullName : </strong>{{userDetails.fullName}}</li>
+        <li class="list-group-item"><strong>Email : </strong>{{userDetails.email}}</li>
+      </ul>
+    </div>
+  </div>
+   <div class="col-md-2" style="margin-top:3%"> 
+     <button style="margin-right:5px; margin-bottom: 5px" class="btn btn-success">Ver reporte</button>
+     <button style="margin-right:5px; margin-bottom: 5px" class="btn btn-info">Solicitar Credito</button>
+     <button class="btn btn-warning">Ver Credito aprovado</button>
+   </div>
+</div>

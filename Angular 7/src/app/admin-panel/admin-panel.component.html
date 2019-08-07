@@ -1,0 +1,86 @@
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="container" style="margin-top:50px">
+                <button (click)="reporte()" style="margin-right:10px" class="btn btn-info">Mostrar Reporte</button>
+                <button (click)="nuevoCredito()" class="btn btn-success">Crear nuevo credito</button>
+            </div>
+        </div>
+        <div *ngIf="accion=='reporte'" class="col-md-7" style="width:100% !important">
+            <h1>Reporte</h1>
+          <table style="width: 100%;"  mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          
+                <ng-container matColumnDef="Nombre">
+                  <th mat-header-cell *matHeaderCellDef> <b style="color:black;">Nombre</b>  </th>
+                  <td style="width:13%" mat-cell *matCellDef="let elemento"> {{elemento.nombre}} </td>
+                </ng-container>
+          
+                <ng-container matColumnDef="Apellido">
+                  <th mat-header-cell *matHeaderCellDef> <b style="color:black;">Clasificacion</b>  </th>
+                  <td style="width:11%" mat-cell *matCellDef="let elemento"> {{elemento.apellido}} </td>
+                </ng-container>
+          
+                <ng-container matColumnDef="Cedula">
+                    <th mat-header-cell *matHeaderCellDef> <b style="color:black;">Cedula</b>  </th>
+                    <td style="width:10%" mat-cell *matCellDef="let elemento"> {{elemento.cedula}} </td>
+                </ng-container>
+            
+                <ng-container  matColumnDef="Estado">
+                    <th mat-header-cell *matHeaderCellDef> <b style="color:black; width: 200%">Estado </b>  </th>
+                    <td style="width:10%" mat-cell *matCellDef="let elemento"> {{elemento.estado}} </td>
+                </ng-container>
+
+                <ng-container  matColumnDef="Notificar">
+                    <th mat-header-cell *matHeaderCellDef> <b style="color:black; width: 200%"> </b>  </th>
+                    <td style="width:10%" mat-cell *matCellDef="let elemento"> 
+                        <button class="btn btn-sm btn-danger" (click)="notificar(elemento)" style="height:30px;  margin-right:10px;">Notificar</button>
+                    </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+        <div *ngIf="accion=='credito'" class="col-md-7" style="width:100% !important">
+            <h1>Creditos</h1>
+            <button class="btn btn-sm btn-success" (click)="nuevo()">Nuevo Credito</button>
+            <br>
+            <br>
+            <div *ngIf="formulario">
+              <hr>
+                <form #form='ngForm' class="mb-4" autocomplete="off" (submit)="onSubmit(form)">
+                    <div class="form-group">
+                      <label>Credito</label>
+                      <input class="form-control" #Credito="ngModel" name="Credito" [(ngModel)]="formModel.Credito" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-8 offset-md-2">
+                          <button type="submit" class="btn btn-lg btn-block" [disabled]="form.invalid">Crear</button>
+                        </div>
+                      </div>
+                  </form>
+                  
+            </div>
+           <hr>
+            <table style="width: 100%;"  mat-table [dataSource]="_dataSource" class="mat-elevation-z8">
+          
+              <ng-container  matColumnDef="Id">
+                    <th mat-header-cell *matHeaderCellDef> <b style="color:black; width: 200%">Id </b>  </th>
+                    <td style="width:10%" mat-cell *matCellDef="let elemento">  </td>
+                </ng-container>
+
+                <ng-container  matColumnDef="Credito">
+                    <th mat-header-cell *matHeaderCellDef> <b style="color:black; width: 200%">Credito </b>  </th>
+                    <td style="width:10%" mat-cell *matCellDef="let elemento">  </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="_displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: _displayedColumns;"></tr>
+            </table>
+        </div>
+      
+      </div>
+</div>
+

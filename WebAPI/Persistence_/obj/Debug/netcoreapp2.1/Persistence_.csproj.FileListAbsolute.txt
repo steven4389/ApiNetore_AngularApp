@@ -1,0 +1,9 @@
+D:\pruebaEmergia\WebAPI\Persistence_\bin\Debug\netcoreapp2.1\Persistence_.deps.json
+D:\pruebaEmergia\WebAPI\Persistence_\bin\Debug\netcoreapp2.1\Persistence_.dll
+D:\pruebaEmergia\WebAPI\Persistence_\obj\Debug\netcoreapp2.1\Persistence_.csprojAssemblyReference.cache
+D:\pruebaEmergia\WebAPI\Persistence_\obj\Debug\netcoreapp2.1\Persistence_.csproj.CoreCompileInputs.cache
+D:\pruebaEmergia\WebAPI\Persistence_\obj\Debug\netcoreapp2.1\Persistence_.AssemblyInfoInputs.cache
+D:\pruebaEmergia\WebAPI\Persistence_\obj\Debug\netcoreapp2.1\Persistence_.AssemblyInfo.cs
+D:\pruebaEmergia\WebAPI\Persistence_\bin\Debug\netcoreapp2.1\Persistence_.pdb
+D:\pruebaEmergia\WebAPI\Persistence_\obj\Debug\netcoreapp2.1\Persistence_.dll
+D:\pruebaEmergia\WebAPI\Persistence_\obj\Debug\netcoreapp2.1\Persistence_.pdb
